@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+
+function checkForEmptyFields()
+{ 
+   var loginVariable= document.getElementById("login").value;
+   var passwordVariable=document.getElementById("password").value;
+   
+
+   if (loginVariable=="" || passwordVariable=="")
+   {
+      alert("You must fill all fields!");
+   }
+
+}
+
+</script>
+
+<style>
+.myStyle
+{
+
+  margin-left:34px
+}
+</style>
+
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+<label>Login:</label> <input id="login" type="text" class="myStyle"/> 
+<br/>
+<br/>
+<label>Password:</label> <input id="password" type="password" style="margin-left:10px"/>
+<br/>
+<br/>
+<input value="Log in" type="submit" onclick="checkForEmptyFields()"/>
+</body>
+</html>

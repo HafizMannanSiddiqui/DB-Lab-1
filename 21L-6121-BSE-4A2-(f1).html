@@ -1,0 +1,67 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body text-align="center" margin="auto">
+    <h1>Inquiry Form</h1>
+    <form method="post">
+      <div class="mb-3">
+        <label>Name:</label>
+        <input type="text" class="form-control" placeholder="Enter Your name" />
+      </div>
+      <br />
+      <div class="mb-3">
+        <label>Password:</label>
+        <input
+          placeholder="Enter Your Password"
+          type="password"
+          class="form-control"
+        />
+      </div>
+      <br />
+      <div>
+        <label type="text">text: </label>
+        <input placeholder="Enter text" type="text" />
+      </div>
+      <br />
+      <div>
+        <label>Comment:</label>
+        <textarea name="textarea" id="" cols="10" rows="5"></textarea>
+      </div>
+      <br />
+      <div class="mb-3 form-check">
+        <label>Is Student</label>
+        <input type="checkbox" class="form-check-input" />
+      </div>
+      <br />
+      <div class="mb-3">
+        <label>Gender </label>
+        <input type="radio" name="gender" /> Male
+        <input type="radio" name="gender" /> Female
+        <input type="radio" name="gender" />others
+      </div>
+      <br />
+      <div>
+        <form>
+          <label>Department</label>
+          <select name="form" aria-placeholder="Select">
+            <option value="">Computer Science</option>
+            <option value="">Data Science</option>
+            <option value="">Agricultural Science</option>
+            <option value="">Software Engineering</option>
+          </select>
+        </form>
+      </div>
+      <br /><br />
+      <button type="submit" class="btn btn-primary" for="save form">
+        Save Form
+      </button>
+    </form>
+  </body>
+</html>
